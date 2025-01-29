@@ -48,15 +48,21 @@ public class Main {
         System.out.println(" За месяц машина произвела " + productivityMonth + " бутылок");
         // задача № 5
         byte totalcolors = 120;
-        byte oneOfficewhite= 2;
+        byte oneOfficewhite = 2;
         byte oneOffisbrown = 4;
         int oneOffistotalcjlors = oneOfficewhite + oneOffisbrown;
         int totalOffice = totalcolors / oneOffistotalcjlors;
         int whitePaint = totalOffice * oneOfficewhite;
         int brownPant = totalOffice * oneOffisbrown;
-        System.out.println("В школе, где " + totalOffice +  " классов нужно  " + whitePaint + " банок белой краски и  " + brownPant + " банок коричневой краски.");
-
-
+        System.out.println("В школе, где " + totalOffice + " классов нужно  " + whitePaint + " банок белой краски и  " + brownPant + " банок коричневой краски.");
+        // задача № 6
+        int banana = 5 * 80;
+        int milk = 2 * 105;
+        int iceCream = 2 * 100;
+        int eggs = 4 * 70;
+        int totalFoodgrams = (banana + milk + iceCream + eggs);
+        double totalFoodkilograms = totalFoodgrams / 1000.0;
+        System.out.println(totalFoodgrams + " грамм и  " + totalFoodkilograms + " килограмм");
 
 
 
