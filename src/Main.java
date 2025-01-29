@@ -28,6 +28,15 @@ public class Main {
         System.out.println(p);
         byte v = 67;
         System.out.println(v);
+        // задача №3
+        byte LyudmilaPavlovna = 23;
+        byte AnnaSergeevna = 27;
+        byte EkaterinaAndreevna = 30;
+        int totalStudents = LyudmilaPavlovna + AnnaSergeevna + EkaterinaAndreevna;
+        short totalPaper = 480;
+        double everyStudent = totalPaper / totalStudents;
+        System.out.println("На каждого ученика рассчитано " + everyStudent+ " листов бумаги");
+
 
 
     }
