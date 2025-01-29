@@ -35,7 +35,18 @@ public class Main {
         int totalStudents = LyudmilaPavlovna + AnnaSergeevna + EkaterinaAndreevna;
         short totalPaper = 480;
         double everyStudent = totalPaper / totalStudents;
-        System.out.println("На каждого ученика рассчитано " + everyStudent+ " листов бумаги");
+        System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
+        // задача № 4
+        byte productivityTwominutes = 16;
+        int productivityTwentyminutes = 20 / 2 * 16;
+        System.out.println(" За 20 минут машина произвела " + productivityTwentyminutes + " бутылок");
+        int productivityDay = productivityTwentyminutes * 3 * 24;
+        System.out.println(" За сутки машина произвела " + productivityDay + " бутылок");
+        int productiviTythreedays = productivityDay * 3;
+        System.out.println(" За 3 дня машина произвела " + productiviTythreedays + " бутылок");
+        int productivityMonth = productiviTythreedays * 10;
+        System.out.println(" За месяц машина произвела " + productivityMonth + " бутылок");
+
 
 
 
