@@ -14,13 +14,6 @@ public class Main {
         double i = 2.67;
         System.out.println("Значение пременной i " + " с типом double " + " равно " + i);
         // задача № 2
-        double z = 27.12;
-        long t = 987678965549L;
-        float h = 2.786F;
-        short m = 569;
-        short k = -159;
-        short l = 27897;
-        byte c = 67;
 
 
     }
