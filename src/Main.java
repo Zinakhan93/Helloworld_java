@@ -46,6 +46,16 @@ public class Main {
         System.out.println(" За 3 дня машина произвела " + productiviTythreedays + " бутылок");
         int productivityMonth = productiviTythreedays * 10;
         System.out.println(" За месяц машина произвела " + productivityMonth + " бутылок");
+        // задача № 5
+        byte totalcolors = 120;
+        byte oneOfficewhite= 2;
+        byte oneOffisbrown = 4;
+        int oneOffistotalcjlors = oneOfficewhite + oneOffisbrown;
+        int totalOffice = totalcolors / oneOffistotalcjlors;
+        int whitePaint = totalOffice * oneOfficewhite;
+        int brownPant = totalOffice * oneOffisbrown;
+        System.out.println("В школе, где " + totalOffice +  " классов нужно  " + whitePaint + " банок белой краски и  " + brownPant + " банок коричневой краски.");
+
 
 
 
