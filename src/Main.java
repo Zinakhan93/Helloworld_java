@@ -14,6 +14,14 @@ public class Main {
         double i = 2.67;
         System.out.println("Значение пременной i " + " с типом double " + " равно " + i);
         // задача № 2
+        double qwert = 27.12;
+        long nchbjh = 987678965549L;
+        float meat = 2.786F;
+        short vhhvghv = 569;
+        short hhgvhgv = -159;
+        short vhgjvv = 27897;
+        byte vhjb = 67;
+
 
 
     }
