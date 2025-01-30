@@ -71,8 +71,27 @@ public class Main {
         System.out.println(" Если тераять каждый день по " + process1 + " то на похудение спортсмена уйдет " + resultProcess1 + " дней");
         float resultProcess2 = loseWeight / process2;
         System.out.println(" Если тераять каждый день по " + process2 + " то на похудение спортсмена уйдет " + resultProcess2 + " дней");
-        float averageValue = (resultProcess1 + resultProcess2 ) / 2;
+        float averageValue = (resultProcess1 + resultProcess2) / 2;
         System.out.println(" В среднем потребуется " + averageValue + " дней");
+        // задача №8
+        int Masha = 67760;
+        int Denis = 83690;
+        int Christina = 76230;
+        double newSalarymasha = Masha * 0.1 + Masha;
+        double salaryYearmasha = Masha * 12;
+        double newSalaryYearmasha = newSalarymasha * 12;
+        double mashaDifference = newSalaryYearmasha - salaryYearmasha;
+        System.out.println("Маша теперь получает " + newSalarymasha + " рублей.Годовой доход вырос на  " + mashaDifference + " рублей");
+        double newSalarydenis = Denis * 0.1 + Denis;
+        double salaryYeardenis = Denis * 12;
+        double newSalaryYeardenis = newSalarydenis * 12;
+        double denisDifference = newSalaryYeardenis - salaryYeardenis;
+        System.out.println(" Денис теперь получает " + newSalarydenis + " рублей. Годовой доход вырос на " + denisDifference + " рублей");
+        double newSalaryChristina = Christina * 0.1 + Christina;
+        double salaryYearchristina = Christina * 12;
+        double newSalaryYeachristina = newSalaryChristina * 12;
+        double christinaDifference = newSalaryYeachristina - salaryYearchristina;
+        System.out.println("Кристина теперь получает " + newSalaryChristina + " рублей. Годовой доход вырос на " + christinaDifference + " рублей");
 
 
     }
