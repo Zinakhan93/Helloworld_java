@@ -63,7 +63,16 @@ public class Main {
         int totalFoodgrams = (banana + milk + iceCream + eggs);
         double totalFoodkilograms = totalFoodgrams / 1000.0;
         System.out.println(totalFoodgrams + " грамм и  " + totalFoodkilograms + " килограмм");
-
+        // задача №7
+        short loseWeight = 7000;
+        short process1 = 250;
+        short process2 = 500;
+        float resultProcess1 = loseWeight / process1;
+        System.out.println(" Если тераять каждый день по " + process1 + " то на похудение спортсмена уйдет " + resultProcess1 + " дней");
+        float resultProcess2 = loseWeight / process2;
+        System.out.println(" Если тераять каждый день по " + process2 + " то на похудение спортсмена уйдет " + resultProcess2 + " дней");
+        float averageValue = (resultProcess1 + resultProcess2 ) / 2;
+        System.out.println(" В среднем потребуется " + averageValue + " дней");
 
 
     }
