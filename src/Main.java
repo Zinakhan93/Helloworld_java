@@ -29,10 +29,10 @@ public class Main {
         byte v = 67;
         System.out.println(v);
         // задача №3
-        byte LyudmilaPavlovna = 23;
-        byte AnnaSergeevna = 27;
-        byte EkaterinaAndreevna = 30;
-        int totalStudents = LyudmilaPavlovna + AnnaSergeevna + EkaterinaAndreevna;
+        byte lyudmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        int totalStudents = lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna;
         short totalPaper = 480;
         double everyStudent = totalPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
@@ -47,14 +47,14 @@ public class Main {
         int productivityMonth = productiviTythreedays * 10;
         System.out.println(" За месяц машина произвела " + productivityMonth + " бутылок");
         // задача № 5
-        byte totalcolors = 120;
-        byte oneOfficewhite = 2;
-        byte oneOffisbrown = 4;
-        int oneOffistotalcjlors = oneOfficewhite + oneOffisbrown;
-        int totalOffice = totalcolors / oneOffistotalcjlors;
-        int whitePaint = totalOffice * oneOfficewhite;
-        int brownPant = totalOffice * oneOffisbrown;
-        System.out.println("В школе, где " + totalOffice + " классов нужно  " + whitePaint + " банок белой краски и  " + brownPant + " банок коричневой краски.");
+        byte totalСolors = 120;
+        byte classWhite = 2;
+        byte classBrown = 4;
+        int oneClass = classWhite + classBrown;
+        int totalClass = totalСolors / oneClass;
+        int whitePaint = totalClass * classWhite;
+        int brownPant = totalClass * classBrown;
+        System.out.println("В школе, где " + totalClass + " классов нужно  " + whitePaint + " банок белой краски и  " + brownPant + " банок коричневой краски.");
         // задача № 6
         int banana = 5 * 80;
         int milk = 2 * 105;
