@@ -2,17 +2,17 @@ public class Main {
     public static void main(String[] args) {
         // задача №1
         int a = 1000000;
-        System.out.println("Значение пременной a с типом int " + " равно " + a);
+        System.out.println("Значение пременной a с типом int равно " + a);
         byte b = 125;
-        System.out.println("Значение пременной b " + " с типом byte " + " равно " + b);
+        System.out.println("Значение пременной b с типом byte равно " + b);
         short c = 30000;
-        System.out.println("Значение пременной c " + " с типом short " + " равно " + c);
+        System.out.println("Значение пременной c с типом short " + " равно " + c);
         long d = 250000000;
-        System.out.println("Значение пременной d " + " с типом long " + " равно " + d);
+        System.out.println("Значение пременной d с типом long " + " равно " + d);
         float e = 3.25F;
-        System.out.println("Значение пременной e " + " с типом float " + " равно " + e);
+        System.out.println("Значение пременной e с типом float " + " равно " + e);
         double i = 2.67;
-        System.out.println("Значение пременной i " + " с типом double " + " равно " + i);
+        System.out.println("Значение пременной i с типом double " + " равно " + i);
         // задача № 2
         double w = 27.12;
         System.out.println(w);
@@ -37,7 +37,7 @@ public class Main {
         int everyStudent = totalPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
         // задача № 4
-        byte productivityPerMinute= 16 /2;
+        byte productivityPerMinute = 16 / 2;
         int productivityTwentyMinutes = 20 * productivityPerMinute;
         System.out.println(" За 20 минут машина произвела " + productivityTwentyMinutes + " бутылок");
         int productivityDay = productivityTwentyMinutes * 3 * 24;
@@ -77,7 +77,7 @@ public class Main {
         int masha = 67760;
         int denis = 83690;
         int christina = 76230;
-        double percent= 0.1;
+        double percent = 0.1;
         double newSalarymasha = masha * percent + masha;
         double salaryYearmasha = masha * 12;
         double newSalaryYearmasha = newSalarymasha * 12;
