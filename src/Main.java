@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // задача №1
         int a = 1000000;
-        System.out.println("Значение пременной a " + " с типом int " + " равно " + a);
+        System.out.println("Значение пременной a с типом int " + " равно " + a);
         byte b = 125;
         System.out.println("Значение пременной b " + " с типом byte " + " равно " + b);
         short c = 30000;
@@ -16,7 +16,7 @@ public class Main {
         // задача № 2
         double w = 27.12;
         System.out.println(w);
-        long q = 987678965549L;
+        long q = 987_678_965_549L;
         System.out.println(q);
         float r = 2.786F;
         System.out.println(r);
@@ -29,22 +29,22 @@ public class Main {
         byte v = 67;
         System.out.println(v);
         // задача №3
-        byte lyudmilaPavlovna = 23;
-        byte annaSergeevna = 27;
-        byte ekaterinaAndreevna = 30;
+        int lyudmilaPavlovna = 23;
+        int annaSergeevna = 27;
+        int ekaterinaAndreevna = 30;
         int totalStudents = lyudmilaPavlovna + annaSergeevna + ekaterinaAndreevna;
-        short totalPaper = 480;
-        double everyStudent = totalPaper / totalStudents;
+        int totalPaper = 480;
+        int everyStudent = totalPaper / totalStudents;
         System.out.println("На каждого ученика рассчитано " + everyStudent + " листов бумаги");
         // задача № 4
-        byte productivityTwominutes = 16;
-        int productivityTwentyminutes = 20 / 2 * 16;
-        System.out.println(" За 20 минут машина произвела " + productivityTwentyminutes + " бутылок");
-        int productivityDay = productivityTwentyminutes * 3 * 24;
+        byte productivityPerMinute= 16 /2;
+        int productivityTwentyMinutes = 20 * productivityPerMinute;
+        System.out.println(" За 20 минут машина произвела " + productivityTwentyMinutes + " бутылок");
+        int productivityDay = productivityTwentyMinutes * 3 * 24;
         System.out.println(" За сутки машина произвела " + productivityDay + " бутылок");
-        int productiviTythreedays = productivityDay * 3;
-        System.out.println(" За 3 дня машина произвела " + productiviTythreedays + " бутылок");
-        int productivityMonth = productiviTythreedays * 10;
+        int productivityThreeDays = productivityDay * 3;
+        System.out.println(" За 3 дня машина произвела " + productivityThreeDays + " бутылок");
+        int productivityMonth = productivityThreeDays * 10;
         System.out.println(" За месяц машина произвела " + productivityMonth + " бутылок");
         // задача № 5
         byte totalСolors = 120;
@@ -60,9 +60,9 @@ public class Main {
         int milk = 2 * 105;
         int iceCream = 2 * 100;
         int eggs = 4 * 70;
-        int totalFoodgrams = (banana + milk + iceCream + eggs);
-        double totalFoodkilograms = totalFoodgrams / 1000.0;
-        System.out.println(totalFoodgrams + " грамм и  " + totalFoodkilograms + " килограмм");
+        int totalFoodGrams = (banana + milk + iceCream + eggs);
+        double totalFoodKilograms = totalFoodGrams / 1000.0;
+        System.out.println(totalFoodGrams + " грамм и  " + totalFoodKilograms + " килограмм");
         // задача №7
         short loseWeight = 7000;
         short process1 = 250;
@@ -74,21 +74,22 @@ public class Main {
         float averageValue = (resultProcess1 + resultProcess2) / 2;
         System.out.println(" В среднем потребуется " + averageValue + " дней");
         // задача №8
-        int Masha = 67760;
-        int Denis = 83690;
-        int Christina = 76230;
-        double newSalarymasha = Masha * 0.1 + Masha;
-        double salaryYearmasha = Masha * 12;
+        int masha = 67760;
+        int denis = 83690;
+        int christina = 76230;
+        double percent= 0.1;
+        double newSalarymasha = masha * percent + masha;
+        double salaryYearmasha = masha * 12;
         double newSalaryYearmasha = newSalarymasha * 12;
         double mashaDifference = newSalaryYearmasha - salaryYearmasha;
         System.out.println("Маша теперь получает " + newSalarymasha + " рублей.Годовой доход вырос на  " + mashaDifference + " рублей");
-        double newSalarydenis = Denis * 0.1 + Denis;
-        double salaryYeardenis = Denis * 12;
+        double newSalarydenis = denis * percent + denis;
+        double salaryYeardenis = denis * 12;
         double newSalaryYeardenis = newSalarydenis * 12;
         double denisDifference = newSalaryYeardenis - salaryYeardenis;
         System.out.println(" Денис теперь получает " + newSalarydenis + " рублей. Годовой доход вырос на " + denisDifference + " рублей");
-        double newSalaryChristina = Christina * 0.1 + Christina;
-        double salaryYearchristina = Christina * 12;
+        double newSalaryChristina = christina * percent + christina;
+        double salaryYearchristina = christina * 12;
         double newSalaryYeachristina = newSalaryChristina * 12;
         double christinaDifference = newSalaryYeachristina - salaryYearchristina;
         System.out.println("Кристина теперь получает " + newSalaryChristina + " рублей. Годовой доход вырос на " + christinaDifference + " рублей");
