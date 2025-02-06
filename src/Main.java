@@ -20,6 +20,7 @@ public class Main {
         } else {
             System.out.println("Скорость " + speed + " можно ездить спокойно");
         }
+        // задача 4
         // задача 5
         int year = 15;
         boolean adultAccompanies = true;
