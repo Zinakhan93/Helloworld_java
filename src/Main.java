@@ -20,7 +20,6 @@ public class Main {
         } else {
             System.out.println("Скорость " + speed + " можно ездить спокойно");
         }
-        // задача 4
         // задача 5
         int year = 15;
         boolean adultAccompanies = true;
@@ -37,5 +36,22 @@ public class Main {
         if (year > 14) {
             System.out.println("Если возраст ребенка равен " + year + ",то он может кататься без сопровождения взрослого");
         }
+        // задача 4
+        int person = 25;
+        if (person >= 2 && person <= 6) {
+            System.out.println("Если возраст человека " + person + ",то ему нужно ходить в школу");
+        }
+        if (person >= 7 && person <= 17) {
+            System.out.println("Если возраст человека " + person + ",то ему нужно ходить в школу");
+        }
+        if (person >= 18 && person <= 24) {
+            System.out.println("Если возраст человека " + person + ",то его место в университете");
+        } else if (person > 24) {
+            System.out.println("Если человеку больше " + person + ",то ему пора ходить на работу");
+        }
+
+
     }
+
+
 }
