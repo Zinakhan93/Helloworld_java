@@ -58,6 +58,18 @@ public class Main {
         } else if (people >102){
             System.out.println("Вагон полностью забит");
         }
+        // задача 7
+        int one = 5;
+        int too = 8;
+        int three = 3;
+        if ( one > too && one > three ){
+            System.out.println("Число " + one + " самое большое");
+        }else if (too > one && too > three){
+            System.out.println(" Число " + too + " самое большое");
+        }else {
+            System.out.println("Число " + three + " самое большое");
+        }
+
 
 
     }
