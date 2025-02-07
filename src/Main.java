@@ -49,6 +49,15 @@ public class Main {
         } else if (person > 24) {
             System.out.println("Если человеку больше " + person + ",то ему пора ходить на работу");
         }
+        // задача 6
+        int people = 103;
+        if (people < 102 && people <= 60) {
+            System.out.println("В вагоне " + people + " человек, есть сидячее место");
+        }else if (people < 102 && people >60){
+            System.out.println("В вагоне " + people + " человек, нет сидячих мест");
+        } else if (people >102){
+            System.out.println("Вагон полностью забит");
+        }
 
 
     }
