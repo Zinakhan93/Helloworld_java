@@ -21,12 +21,12 @@ public class Main {
             System.out.println("Скорость " + speed + " можно ездить спокойно");
         }
         // задача 5
-        int year = 15;
+        int year = 14;
         boolean adultAccompanies = true;
         if (year < 5) {
             System.out.println("Если возраст ребенка равен " + year + ",то он не может кататься на аттракционе ");
         }
-        if (year > 5 && year < 14) {
+        if (year >= 5 && year <= 14) {
             if (adultAccompanies) {
                 System.out.println("Ели возраст ребенка равен " + year + ",то он может кататься только в сопровождении взрослого");
             } else {
@@ -37,9 +37,9 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + year + ",то он может кататься без сопровождения взрослого");
         }
         // задача 4
-        int person = 25;
+        int person = 5;
         if (person >= 2 && person <= 6) {
-            System.out.println("Если возраст человека " + person + ",то ему нужно ходить в школу");
+            System.out.println("Если возраст человека " + person + ",то ему нужно ходить в детский сад");
         }
         if (person >= 7 && person <= 17) {
             System.out.println("Если возраст человека " + person + ",то ему нужно ходить в школу");
@@ -53,23 +53,22 @@ public class Main {
         int people = 103;
         if (people < 102 && people <= 60) {
             System.out.println("В вагоне " + people + " человек, есть сидячее место");
-        }else if (people < 102 && people >60){
+        } else if (people < 102 && people > 60) {
             System.out.println("В вагоне " + people + " человек, нет сидячих мест");
-        } else if (people >102){
+        } else if (people > 102) {
             System.out.println("Вагон полностью забит");
         }
         // задача 7
         int one = 5;
         int too = 8;
         int three = 3;
-        if ( one > too && one > three ){
+        if (one > too && one > three) {
             System.out.println("Число " + one + " самое большое");
-        }else if (too > one && too > three){
+        } else if (too > one && too > three) {
             System.out.println(" Число " + too + " самое большое");
-        }else {
+        } else {
             System.out.println("Число " + three + " самое большое");
         }
-
 
 
     }
