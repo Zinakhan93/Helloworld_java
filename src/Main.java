@@ -21,6 +21,13 @@ public class Main {
         }else if (clientOsFon == 1){
             System.out.println("Установите версию приложения для Android по ссылке");
         }
+        // задача 3
+        int year = 2025;
+        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)){
+            System.out.println("Год является высокосным");
+        } else {
+            System.out.println("Год  не является вискосным");
+        }
 
 
 
