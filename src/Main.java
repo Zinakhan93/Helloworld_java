@@ -36,20 +36,40 @@ public class Main {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней " + day);
         }
-            if (deliveryDistance > 20 && deliveryDistance < 60) {
-                System.out.println("Потребуетяс дней " + (day += 1));
+        if (deliveryDistance > 20 && deliveryDistance < 60) {
+            System.out.println("Потребуетяс дней " + (day += 1));
         }
-            if (deliveryDistance > 60 && deliveryDistance <= 100){
-                System.out.println("Потребуется дней " + (day += 2));
-            }else if (deliveryDistance > 100){
-                System.out.println("К сожалению, доставки нет");
-
-            }
-
-
-
-
-
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней " + (day += 2));
+        } else if (deliveryDistance > 100) {
+            System.out.println("К сожалению, доставки нет");
+        }
+        // задача 5
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Весенний месяц");
+                break;
+            default:
+                System.out.println("Такого месяца не существует");
+        }
 
     }
 }
