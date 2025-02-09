@@ -6,8 +6,7 @@ public class Main {
         int clientOs = 1;
         if (clientOs == 0) {
             System.out.println("Установите версию приложения для IOS  по ссылке");
-        }
-        if (clientOs == 1) {
+        }else if (clientOs == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
         // задача 2
@@ -36,7 +35,7 @@ public class Main {
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней " + day);
         }
-        if (deliveryDistance > 20 && deliveryDistance < 60) {
+        if (deliveryDistance > 20 && deliveryDistance <= 60) {
             System.out.println("Потребуетяс дней " + (day += 1));
         }
         if (deliveryDistance > 60 && deliveryDistance <= 100) {
