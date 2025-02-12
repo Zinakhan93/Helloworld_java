@@ -2,72 +2,53 @@ import com.sun.jdi.Value;
 
 public class Main {
     public static void main(String[] args) {
-        //задача 1
-        int clientOs = 1;
-        if (clientOs == 0) {
-            System.out.println("Установите версию приложения для IOS  по ссылке");
-        }else if (clientOs == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
+        // Задача 1
+        for (int i = 1; i < 11; i++) {
+            System.out.println(i);
         }
         // задача 2
-        int clientOsFon = 1;
-        int clientDeviceYear = 2012;
-        if (clientOsFon == 0 && clientDeviceYear <= 2015) {
-            System.out.println("Установите облегченную версию приложения для IOS");
-        } else if (clientOsFon == 0) {
-            System.out.println("Установите версию приложения для IOS  по ссылке");
-        }
-        if (clientOsFon == 1 && clientDeviceYear <= 2015) {
-            System.out.println("Установите облегченную версию приложения для Android");
-        } else if (clientOsFon == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
+        for (int i = 10; i > 0; i--) {
+            System.out.println(i);
         }
         // задача 3
-        int year = 2025;
-        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-            System.out.println("Год является высокосным");
-        } else {
-            System.out.println("Год  не является вискосным");
+        for (int i = 0; i < 17; i += 2) {
+            System.out.println(i);
         }
         // задача 4
-        int deliveryDistance = 95;
-        int day = 1;
-        if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней " + day);
-        }
-        if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println("Потребуетяс дней " + (day += 1));
-        }
-        if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется дней " + (day += 2));
-        } else if (deliveryDistance > 100) {
-            System.out.println("К сожалению, доставки нет");
+        for (int i = 10; i >= -10; i--) {
+            System.out.println(i);
         }
         // задача 5
-        int monthNumber = 12;
-        switch (monthNumber) {
-            case 12:
-            case 1:
-            case 2:
-                System.out.println("Зимний месяц");
-                break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Весенний месяц");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println("Летний месяц");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println("Весенний месяц");
-                break;
-            default:
-                System.out.println("Такого месяца не существует");
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i + " год является вискокосным");
+        }
+        // задача 6
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
+        // задача 7
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.println(i);
+        }
+        // задача 8
+        int salari = 29000;
+        int totalSalary = 0;
+        for (int i = 1; i < 13; i++) {
+            totalSalary = totalSalary + salari;
+            System.out.println("Месяц " + i + " сумма накоплений ровна " + totalSalary);
+        }
+        // задача 10
+        int number = 2;
+        for (int i = 1; i < 11; i++) {
+            System.out.println(number + "*" + i + " = " + number * i);
+        }
+        // задача 9
+        int money = 29000;
+        int totalMoney = 0;
+        for (int i = 0; i < 12; i++) {
+            totalMoney = totalMoney + totalMoney / 100;
+            totalMoney = totalMoney + money;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + totalMoney);
         }
 
     }
