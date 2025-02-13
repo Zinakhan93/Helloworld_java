@@ -21,7 +21,14 @@ public class Main {
         for (int b = 10; b > 0; b--) {
             System.out.print(b + " ");
         }
-        //
+        //задача 3
+        int population = 12_000_000;
+        int birthRate = 17;
+        int mortality =8;
+        for (int v =0; v<=10; v++){
+            population = population +  population/1000*17  - population/1000*8;
+            System.out.println("Год " + v + " численность населения составляет " + population);
+        }
 
 
     }
