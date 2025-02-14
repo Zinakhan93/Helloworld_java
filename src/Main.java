@@ -48,6 +48,17 @@ public class Main {
             }
         }
         // задача 6
+        int pay3 = 15000;
+        int totalPay3 = 0;
+        int totalYear = 9 * 12;
+        for (int monht = 0; monht <= 106; monht++) {
+            totalPay3 = totalPay3 + totalPay3 / 100 * 7;
+            totalPay3 = totalPay3 + pay3;
+            if (monht % 6 == 0){
+                System.out.println(monht + " " + totalPay3);
+            }
+        }
+
 
 
     }
