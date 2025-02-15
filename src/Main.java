@@ -21,6 +21,7 @@ public class Main {
         for (int b = 10; b > 0; b--) {
             System.out.print(b + " ");
         }
+        System.out.println();
         //задача 3
         int population = 12_000_000;
         int birthRate = 17;
@@ -54,11 +55,25 @@ public class Main {
         for (int monht = 0; monht <= 106; monht++) {
             totalPay3 = totalPay3 + totalPay3 / 100 * 7;
             totalPay3 = totalPay3 + pay3;
-            if (monht % 6 == 0){
+            if (monht % 6 == 0) {
                 System.out.println(monht + " " + totalPay3);
             }
         }
-
+        // задача 7
+        int friday = 5;
+        while (friday <= 31) {
+            System.out.println("Сегодня пятница " + friday + " число. Необходимо  подготовичть  отчет");
+            friday += 7;
+        }
+        // задача 8
+        int yeaBefore = 2024 - 200;
+        int yearAfter = 2024 + 100;
+        int year = 0;
+        for (year = yeaBefore; year < yearAfter; year++) {
+            if (year % 79 == 0) {
+                System.out.println(year);
+            }
+        }
 
 
     }
