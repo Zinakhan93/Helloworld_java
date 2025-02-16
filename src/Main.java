@@ -5,7 +5,7 @@ public class Main {
         // задача 1
         int salary = 15000;
         int total = 0;
-        int i = 0;
+        int i = 1;
         while (total <= 2459000) {
             total = total + salary;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total);
