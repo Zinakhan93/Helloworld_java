@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 
 public class Main {
+    /* Урок с методами */
     public static void checkLeapYear(int year) {
         if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
             System.out.println(" Год является высокосным");
