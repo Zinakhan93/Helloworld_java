@@ -37,9 +37,7 @@ public class Book {
     public void setYaerPpublication(int yaerPpublication) {
         this.yaerPublication = yaerPpublication;
     }
-    /* Создаем через генератор equals и hashCode, а также toString, еще не совсем понятно зачем
-    но преподаватель говорит, что надо.
-     */
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
