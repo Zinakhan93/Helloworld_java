@@ -37,9 +37,7 @@ public class Book {
     public void setYaerPpublication(int yaerPpublication) {
         this.yaerPublication = yaerPpublication;
     }
-    /* Создаем через генератор equals и hashCode, а также toString, еще не совсем понятно зачем
-    но преподаватель говорит, что надо.
-     */
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -54,11 +52,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "author=" + author +
-                ", name='" + name + '\'' +
-                ", yaerPublication=" + yaerPublication +
-                '}';
+       String result = String.format("Название книги: %s,%s, год публикации: %s", name, author, yaerPublication);
+        //return "Название книги: " + " " + name + " , " + author + ", год публикации " + yaerPublication;
+        return result;
+
     }
 }
 
