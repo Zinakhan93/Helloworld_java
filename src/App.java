@@ -15,6 +15,15 @@ public class App {
         Book iinformation2 = new Book(author2, "Братья Карамазовы", 1879);
         System.out.println(author2.getFirsname() + " " + author2.getLasname() + " " + iinformation2.getName() + " " + iinformation2.getYaerPublication());
 
+        System.out.println("-------------------------------------------------------");
+        // Домашняя работа по методам
+        System.out.println(author1);
+        System.out.println(author2);
+        System.out.println(information);
+        System.out.println(iinformation2);
+        System.out.println(information.equals(iinformation2));
+        System.out.println(author1.equals(author2));
+
 
     }
 
