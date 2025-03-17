@@ -21,34 +21,55 @@ public class Main {
         initEmployees();
         print();
         System.out.println("Сумма зп всех сотрудников: " + " " + calculateSumOfSalaries());
+        System.out.println("Сотрудник с минимальной зарплатой: " + findEmployeeMinSalaries());
+        System.out.println("Сотрудник с максимальной зарплатой:" + findEmployeeMaxSalaries());
+        System.out.println("Среднее значение зарплат: " + calculateAwerageOfSalaries());
+        printFullNames();
 
     }
 
     private static void print() {
         for (Employee i : EMPLOYEES) {
             System.out.println(i);
-
         }
     }
-
-    private static int calculateSumOfSalaries() {
-        int sum = 0;
+    private static double calculateSumOfSalaries() {
+        double sum = 0;
         for (Employee i : EMPLOYEES) {
             sum += i.getSalary();
         }
         return sum;
     }
-
     private static Employee findEmployeeMinSalaries() {
         Employee employeeMinSalaries = null;
         for (Employee i : EMPLOYEES) {
             if (employeeMinSalaries==null || i.getSalary() < employeeMinSalaries.getSalary()){
                 employeeMinSalaries = i;
             }
-
         }
         return employeeMinSalaries;
-
     }
+    private static Employee findEmployeeMaxSalaries() {
+        Employee employeeMaxSalaries = null;
+        for (Employee i : EMPLOYEES) {
+            if (employeeMaxSalaries==null || i.getSalary() > employeeMaxSalaries.getSalary()){
+                employeeMaxSalaries = i;
+            }
+        }
+        return employeeMaxSalaries;
+    }
+    private static double calculateAwerageOfSalaries() {
+       return calculateSumOfSalaries()/EMPLOYEES.length;
+    }
+    private static void printFullNames() {
+        for (Employee i : EMPLOYEES) {
+            System.out.println(i.getFullName());
+        }
+    }
+
+
+
+
 }
+
 
